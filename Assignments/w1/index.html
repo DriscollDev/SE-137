@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .hide{
+            display: none;
+        }
+        h1{
+            color: green;
+        }
+        h2{
+            color: crimson;
+        }
+        img{
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conor Driscoll</h1>
+    <hr>
+    <div id="nav">
+        <a href="#">Bio</a>
+        <a href="#">Education</a>
+        <a href="#">Hobbies</a>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio" class="section">
+            <h2><em>My Bio</em></h2>
+            <img src="images/mschoolbus.png" alt="Image" style="width: 100px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, laborum et ipsa ratione sunt qui voluptates id repellat expedita mollitia sint, minima inventore unde quis quo impedit explicabo accusantium doloribus. </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto non totam et debitis odio odit ipsam! Aperiam nostrum asperiores nihil debitis quasi. Voluptatem minima cupiditate delectus cumque dolor ab impedit.</p>
+            <hr>
+        </div>
+        <div id="ed" class="hide section">
+            <h2><b>Schooling</b></h2>
+            <ul>
+                <li><a href="https://www.ewgrsd.org/o/ewg-senior-high" target="_blank">Exeter West Greenwich Regional High School</a></li>
+                <li>Rochester Institute of Technology</li>
+                <li>Career Devs</li>
+            </ul>
+        </div>
+        <div id="hobbies" class="hide section">
+            <h2><strong>Interests</strong></h2>
+            <ol>
+                <li>Dungeons and Dragons</li>
+                <li>Vidya Games</li>
+                <li>Reading</li>
+            </ol>
+            <img src="images/DnD_5e_logo.png" alt="Image">
+            <hr>
+        </div>
+        <div id="footer">
+            <i>©2024 Conor Driscoll | W1 Assignment</i>
+        </div>
+    </div>
+    <hr>
+    <script>
+        var a = Array.from(document.querySelectorAll(`a`));
+        var div = document.querySelectorAll(`.section`);
+        console.log(a);
+        for(var rec of a){
+            rec.addEventListener(`click`, buttonClick);
+        }
+        function buttonClick(e){
+            e.preventDefault()                
+            for(rec of div){
+                rec.classList.add(`hide`)
+            }
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+    </script>
+</body>
+</html>

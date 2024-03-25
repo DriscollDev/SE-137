@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+div{
+    color: violet;
+}
+
+#bob{
+    color: red;
+}
+
+.orange{
+    color: orange;
+}
+
+div.orange b{
+    background-color: yellow;
+}
+
+div b{
+    color: black;
+}
+
+input[type="text"]{
+    background-color: yellow;
+}
+
+a{
+    /* color: brown; */
+}
+
+a:link, a:visited{
+    color: brown;
+}
+a:hover, a:active{
+    color: blue
+}
+
+bob::after{
+    content: "my name is bob";
+}
+

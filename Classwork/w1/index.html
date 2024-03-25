@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SE137 | W1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Week 1">
+        <meta name="author" content="Conor Driscoll">
+        <style>
+            .hide{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+        </div>
+        <div id="1" class="section">div 1</div>
+        <div id="2" class="section">div 2</div>
+        <div id="3" class="section">div 3</div>
+
+        <script>
+            var a = Array.from(document.querySelectorAll(`a`));
+            var div = document.querySelectorAll(`.section`);
+            console.log(a);
+            for(var rec of a){
+                rec.addEventListener(`click`, buttonClick);
+            }
+            function buttonClick(e){
+                e.preventDefault()                
+                for(rec of div){
+                    rec.classList.add(`hide`)
+                }
+                div[a.indexOf(e.target)].classList.remove(`hide`);
+            }
+        </script>
+    </body>
+</html>

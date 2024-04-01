@@ -27,9 +27,9 @@
     <h1>Conor Driscoll</h1>
     <hr>
     <div id="nav">
-        <a href="#">Bio</a>
-        <a href="#">Education</a>
-        <a href="#">Hobbies</a>
+        <a href="#" class="page">Bio</a>
+        <a href="#" class="page">Education</a>
+        <a href="#" class="page">Hobbies</a>
     </div>
     <hr>
     <div id="main">
@@ -64,7 +64,7 @@
     </div>
     <hr>
     <script>
-        var a = Array.from(document.querySelectorAll(`a`));
+        var a = Array.from(document.querySelectorAll(`a.page`));
         var div = document.querySelectorAll(`.section`);
         console.log(a);
         for(var rec of a){

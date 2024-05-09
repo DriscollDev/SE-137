@@ -1,0 +1,70 @@
+#header{
+  grid-area: header;
+}
+#main{
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    'top top top'
+    'top top top'
+    'left left right';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+#bio{
+  grid-area: top;
+  
+}
+#ed{
+  grid-area: right;
+}
+#hobbies{
+  grid-area: left;
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'body gap img'
+    'body gap img';
+  gap: 10px;
+  padding: 10px;
+}
+#footer{
+  grid-area: footer;
+}
+.section{
+  display: grid;
+  grid-template-areas:
+    'title title title'
+    'body body body'
+    'body body body';
+  gap: 10px;
+  padding: 10px;
+}
+.subtitle{
+  grid-area: title;
+  background-color: #104169;
+  margin: 0px 10px 0px 10px;
+}
+.subbody{
+  grid-area: body;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main   main   main   main   main   main'
+    'main   main   main   main   main   main'
+    'main   main   main   main   main   main'
+    'main   main   main   main   main   main'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

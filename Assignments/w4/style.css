@@ -1,70 +1,116 @@
+body{
+  background-color: #282828;
+  margin: 0;
+}
+
 #header{
   grid-area: header;
-}
-#main{
-  grid-area: main;
-  display: grid;
-  grid-template-areas:
-    'top top top'
-    'top top top'
-    'left left right';
-  gap: 10px;
-  background-color: #2196F3;
+  background-color: black;
+  height: 90px;
+  margin-bottom: -10px;
+  display: flex;
+  flex-direction: row;
   padding: 10px;
 }
-#bio{
-  grid-area: top;
-  
+#header p{
+  color: red;
+  font-size: 30px;
+  margin-right: auto;
 }
-#ed{
-  grid-area: right;
-}
-#hobbies{
-  grid-area: left;
-  display: grid;
-  grid-template-areas:
-    'title title title'
-    'body gap img'
-    'body gap img';
-  gap: 10px;
-  padding: 10px;
+#header img{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
 }
 #footer{
   grid-area: footer;
+  background-color: black;
+  font-size: 12px;
+  height: 60px;
 }
-.section{
-  display: grid;
-  grid-template-areas:
-    'title title title'
-    'body body body'
-    'body body body';
-  gap: 10px;
+#footer p{
+  display: inline;
+  margin-left: 10px;
+  vertical-align: -150%;
+  color: white;
+}
+.banner{
+  grid-area: banner;
+  width: 100%; 
+  height: auto; 
+  max-width: 1440px;
+  max-height: 400px;
+  object-fit: cover;
+}
+.left{
+  grid-area: left;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.left-2{
+  grid-area: left;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.left-2 h3{
+  color: red;
+  border-bottom: 3px solid red;
+} 
+.left-2 p{
+  color: white;
+  font-size: 18px;
+}
+.mid{
+  grid-area: mid;
+  display: flex;
+  flex-direction: column;
+}
+.mid p{
+  color: white;
+  font-size: 24;
+}
+.right{
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+}
+.right p{
+  color: white;
+  font-size: 18px;
   padding: 10px;
 }
-.subtitle{
-  grid-area: title;
-  background-color: #104169;
-  margin: 0px 10px 0px 10px;
+.right p b{
+  color: red;
 }
-.subbody{
-  grid-area: body;
+.right img{
+  width: auto;
+  max-width: 340px;
+  max-height: 400px;
 }
+
+
+
+
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'main   main   main   main   main   main'
-    'main   main   main   main   main   main'
-    'main   main   main   main   main   main'
-    'main   main   main   main   main   main'
-    'footer footer footer footer footer footer';
+    'header header header header header'
+    'banner banner banner banner right'
+    'left   left   mid    mid    right'
+    'left   left   mid    mid    right'
+    'left   left   mid    mid    right'
+    'left   left   mid    mid    right'
+    'footer footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  background-color: #282828;
 }
 .grid-item{
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #393939;
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
 }

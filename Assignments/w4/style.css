@@ -1,3 +1,26 @@
+  
+.teko-regular{
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
   background-color: #282828;
   margin: 0;
@@ -13,16 +36,16 @@ body{
   padding: 10px;
 }
 #header p{
+  font-family: teko;
   color: red;
   font-size: 30px;
   margin-right: auto;
 }
-#header img{
+#header i{
   margin-top: auto;
   margin-bottom: auto;
+  color: red;
   padding: 5px;
-  height: 60px;
-  width: 60px;
   justify-content: flex-end;
 }
 #footer{
@@ -35,6 +58,7 @@ body{
   display: inline;
   margin-left: 10px;
   vertical-align: -150%;
+  font-family: teko;
   color: white;
 }
 .banner{
@@ -58,10 +82,13 @@ body{
   flex-direction: column;
 }
 .left-2 h3{
+  font-family: rock salt;
+  font-size: 30px;
   color: red;
   border-bottom: 3px solid red;
 } 
 .left-2 p{
+  font-family: poppins;
   color: white;
   font-size: 18px;
 }
@@ -72,7 +99,8 @@ body{
 }
 .mid p{
   color: white;
-  font-size: 24;
+  font-family: poppins;
+  font-size: 24px;
 }
 .right{
   grid-area: right;
@@ -81,6 +109,7 @@ body{
 }
 .right p{
   color: white;
+  font-family: roboto;
   font-size: 18px;
   padding: 10px;
 }
@@ -89,12 +118,9 @@ body{
 }
 .right img{
   width: auto;
-  max-width: 340px;
+  max-width: 325px;
   max-height: 400px;
 }
-
-
-
 
 .grid-container {
   display: grid;

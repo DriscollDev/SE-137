@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Software Layout</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="fileSystem"><a href="#">File</a>  <a href="#">Edit</a> <a href="#">Help</a></div>
+        </header>
+        <section>
+            <aside>
+                <a href="#" id="tray"><div class="sprite bin"></div></a>
+                <a href="#" id="tray"><div class="sprite grid"></div></a>
+                <a href="#" id="tray" style="margin-top: auto;
+                margin-bottom: 10px;"><div class="sprite trash"></div></a>
+            </aside>
+            <nav>
+                <details>
+                    <summary>Files</summary>
+                    <ul class="fileList">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                        
+                    </ul>
+                </details>
+                <details>
+                    <summary style="border-top: 1px solid white;">Other Stuff</summary>
+                    <ul class="fireList">
+                        <li>Stuff 1</li>
+                        <li>Stuff 2</li>
+                    </ul>
+                </details>
+            </nav>
+            <div id="content">
+                <div id="tabs">
+                    <a href="#">
+                        <div class="sprite plane"></div> Tab 1 <div class="sprite exit"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sprite plane"></div> Tab 2 <div class="sprite exit"></div>
+                    </a>
+                </div>
+                <div id="breadcrumbs">
+                    <a href="#">SE 137</a> >
+                    <a href="#">w6</a> >
+                    <a href="#">Assingments</a> >
+                    <a href="#">Tab 1</a>
+                </div>
+                <textarea></textarea>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Portfolio</title>
+    <!--Base stylesheet-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Color theme stylesheet-->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+    <!--Personal Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    <header class="w3-row-padding w3-theme">
+        <h1 class="w3-twothird">Header</h1>
+        <div class="w3-third w3-bar w3-margin-top w3-hide-small">
+            <button class="w3-bar-item w3-button" onclick="swapTab('main')">Main</button>
+            <button class="w3-bar-item w3-button" onclick="swapTab('featured'), showDivs(1)">Featured Project</button>
+            <button class="w3-bar-item w3-button" onclick="swapTab('projects')">All Projects</button>
+        </div>
+        <div class="s1 w3-hide-medium w3-hide-large w3-margin-top">
+            <div class="w3-dropdown-click">
+                <button class="w3-button" onclick="myFunction()"><i class="fa fa-caret-down"></i>
+                </button>
+                <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+                    <button class="w3-bar-item w3-button" onclick="swapTab('main')">Main</button>
+                    <button class="w3-bar-item w3-button" onclick="swapTab('featured'), showDivs(1)">Featured Project</button>
+                    <button class="w3-bar-item w3-button" onclick="swapTab('projects')">All Projects</button>
+                </div>
+              </div>
+        </div>
+    </header>
+    <div class="w3-container w3-theme-l4">
+        <div id="main" class="tab">
+            <div class="feature-banner w3-row-padding w3-stretch">
+                <img src="images/skyrim.png" alt="feature" class="w3-content w3-half" style="max-height: 300px;">
+                <div class="w3-half w3-panel w3-theme-l5">
+                    <h2>Featured Project 1</h2>
+                    <p>This is a description of a featured project and its really cool and you are very impressed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora culpa explicabo exercitationem dolorum commodi animi? Neque atque quaerat cupiditate officia est eaque quo quia aliquam impedit, natus aperiam! Eos, illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam natus libero delectus nulla voluptate consequatur officiis at laborum mollitia! Nemo ex facere sint voluptatum? Blanditiis error consectetur explicabo similique natus.</p>
+                </div>
+            </div>
+            <div class="project-set w3-row-padding w3-stretch" style="padding: 10px;">
+                <img src="images/imageicon.png" alt="proj-1" class="w3-quarter w3-circle">
+                <img src="images/imageicon.png" alt="proj-2" class="w3-quarter w3-circle w3-hide-small">
+                <img src="images/imageicon.png" alt="proj-3" class="w3-quarter w3-circle w3-hide-small">
+                <img src="images/imageicon.png" alt="proj-4" class="w3-quarter w3-circle w3-hide-small">
+            </div>
+            <div class="about-me w3-row-padding">
+                <div class="w3-half w3-row-padding">
+                    <img src="images/aruther.png" alt="pic" class="w3-half">
+                    <p class="w3-half">Hey this is a bio and this is about me. Im super cool and the best dev ever. So you should 100% hire me without even looking at any of my projects. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel cupiditate, odit repellendus fuga esse quia, illo nisi corporis rerum rem minus in, animi enim perferendis dignissimos omnis recusandae dolorum labore?</p>
+                </div>
+                <div class="w3-row-padding w3-quarter">
+                    <a href="#" class="w3-col" style="width:100%">Contact Email</a>
+                    <a href="#" class="w3-col" style="width:100%">Github Repo Link</a>
+                    <a href="#" class="w3-col" style="width:100%">Github Repo Link</a>    
+                </div>
+                <div class="w3-row-padding w3-quarter" style="padding: 20px;">
+                    <img src="images/instagram.png" alt="" class="w3-half">
+                    <img src="images/linkedin.png" alt="" class="w3-half">
+                    <img src="images/discord.png" alt="" class="w3-half">
+                    <img src="images/twitter.png" alt="" class="w3-half">
+                </div>
+            </div>
+            
+        </div>
+        <div id="featured" class="tab w3-row-padding" style="display: none;">
+            <div class="w3-container">
+                <img class="mySlides" src="images/skyrim.png" style="width: 100%;">
+                <img class="mySlides" src="images/skyrim2.jpg" style="width: 100%;">
+                <img class="mySlides" src="images/skyrim3.webp" style="width: 100%;">
+                <img class="mySlides" src="images/skyrim4.jpg" style="width: 100%;">
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            <div class="w3-panel w3-theme-l5">
+                <h2>Featured Project</h2>
+                <p>This is a description of a featured project and its really cool and you are very impressed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora culpa explicabo exercitationem dolorum commodi animi? Neque atque quaerat cupiditate officia est eaque quo quia aliquam impedit, natus aperiam! Eos, illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam natus libero delectus nulla voluptate consequatur officiis at laborum mollitia! Nemo ex facere sint voluptatum? Blanditiis error consectetur explicabo similique natus.</p>
+            </div>
+        </div>
+        <div id="projects" class="tab w3-row-padding" style="display: none;">
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+            <div class="w3-card w3-theme-l1 w3-quarter w3-hover-shadow">
+                <img src="images/imageicon.png" alt="Test" style="width: 100%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia sed cupiditate fugiat porro itaque dicta temporibus amet aspernatur? Eligendi libero soluta officiis laborum quae! Adipisci possimus aliquid distinctio maiores.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <footer class="w3-container w3-theme">
+        <p>&copy Footer</p>
+    </footer>
+
+  </body>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    function swapTab(tabName) {
+        var i;
+        var x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        showDivs(slideIndex);
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+    }
+  </script>
+</html>
+
